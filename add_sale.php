@@ -45,7 +45,7 @@
         <div class="form-group">
           <div class="input-group">
             <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary">Find It</button>
+              <button type="submit" class="btn btn-primary"><?php  echo text()->translate('Find It'); ?></button>
             </span>
             <input type="text" id="sug_input" class="form-control" name="title"  placeholder="Search for product name">
          </div>
@@ -61,19 +61,19 @@
       <div class="panel-heading clearfix">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Sale Eidt</span>
+          <span><?php  echo text()->translate('Sale Edit'); ?></span>
        </strong>
       </div>
       <div class="panel-body">
         <form method="post" action="add_sale.php">
          <table class="table table-bordered">
            <thead>
-            <th> Item </th>
-            <th> Price </th>
-            <th> Qty </th>
-            <th> Total </th>
-            <th> Date</th>
-            <th> Action</th>
+            <th> <?php  echo text()->translate('Item'); ?> </th>
+            <th> <?php  echo text()->translate('Price'); ?> </th>
+            <th> <?php  echo text()->translate('Qty'); ?> </th>
+            <th> <?php  echo text()->translate('Total'); ?> </th>
+            <th> <?php  echo text()->translate('Date'); ?></th>
+            <th> <?php  echo text()->translate('Action'); ?></th>
            </thead>
              <tbody  id="product_info"> </tbody>
          </table>

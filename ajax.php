@@ -57,7 +57,8 @@
 
         }
     } else {
-        $html ='<tr><td>product name not resgister in database</td></tr>';
+        $errorTxt = text()->translate('product name not resgister in database'); 
+        $html ='<tr><td>' . $errorTxt . '</td></tr>';
     }
 
     echo json_encode($html);

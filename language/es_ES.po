@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-02-21 23:00-0500\n"
+"PO-Revision-Date: 2016-02-21 23:45-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Products"
+msgstr "Productos"
+
+msgid "Sales"
+msgstr "Ventas"
+
+msgid "Highest Saleing Products"
+msgstr "Los productos más vendidos"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Total Sold"
+msgstr "Total Vendido"
+
+msgid "Total Quantity"
+msgstr "Cantidad Total"
+
+msgid "LATEST SALES"
+msgstr "ÚLTIMAS VENTAS"
+
+msgid "Product Name"
+msgstr "Nombre de Producto"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Total Sale"
+msgstr "Total Venta"
+
+msgid "Recently Added Products"
+msgstr "Productos recientemente agregados"

@@ -40,7 +40,7 @@
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
-            <span>Add New Categorie</span>
+            <span><?php  echo text()->translate('Add New Categorie'); ?></span>
          </strong>
         </div>
         <div class="panel-body">
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <input type="text" class="form-control" name="categorie-name" placeholder="Categorie Name">
             </div>
-            <button type="submit" name="add_cat" class="btn btn-primary">Add categorie</button>
+            <button type="submit" name="add_cat" class="btn btn-primary"><?php  echo text()->translate('Add categorie'); ?></button>
         </form>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>All Categories</span>
+          <span><?php  echo text()->translate('All Categories'); ?></span>
        </strong>
       </div>
         <div class="panel-body">
@@ -66,8 +66,8 @@
             <thead>
                 <tr>
                     <th class="text-center" style="width: 50px;">#</th>
-                    <th>Categories</th>
-                    <th class="text-center" style="width: 100px;">Actions</th>
+                    <th><?php  echo text()->translate('Categories'); ?></th>
+                    <th class="text-center" style="width: 100px;"><?php  echo text()->translate('Actions'); ?></th>
                 </tr>
             </thead>
             <tbody>

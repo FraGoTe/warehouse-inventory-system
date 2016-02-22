@@ -28,7 +28,7 @@
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_user['total']; ?> </h2>
-          <p class="text-muted">Users</p>
+          <p class="text-muted"><?php  echo text()->translate('Users'); ?></p>
         </div>
        </div>
     </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_categorie['total']; ?> </h2>
-          <p class="text-muted">Categories</p>
+          <p class="text-muted"><?php  echo text()->translate('Categories'); ?></p>
         </div>
        </div>
     </div>
@@ -50,7 +50,7 @@
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_product['total']; ?> </h2>
-          <p class="text-muted">Products</p>
+          <p class="text-muted"><?php  echo text()->translate('Products'); ?></p>
         </div>
        </div>
     </div>
@@ -61,7 +61,7 @@
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_sale['total']; ?></h2>
-          <p class="text-muted">Sales</p>
+          <p class="text-muted"><?php  echo text()->translate('Sales'); ?></p>
         </div>
        </div>
     </div>
@@ -69,12 +69,13 @@
   <div class="row">
    <div class="col-md-12">
       <div class="panel">
-        <div class="jumbotron text-center">
-           <h1>Thank You! for your support and love.</h1>
-           <p> <strong>OSWA-INV v2</strong> way more better then <strong> v1 </strong>.
-           </br>If you have a question regarding the usage of this applications, please ask on <a href="https://www.facebook.com/oswapp" title="Facebook" target="_blank">Facebook</a> OSWA Fan page.</p>
-
-        </div>
+          <div class="jumbotron text-center">
+              <h1>Thank You! for your support and love.</h1>
+              <p> <strong>OSWA-INV v2</strong> way more better then <strong> v1 </strong>.
+                  </br>If you have a question regarding the usage of this applications, please ask on 
+                  <a href="https://www.facebook.com/oswapp" title="Facebook" target="_blank">Facebook</a> OSWA Fan page.
+              </p>
+          </div>
       </div>
    </div>
   </div>
@@ -84,16 +85,16 @@
        <div class="panel-heading">
          <strong>
            <span class="glyphicon glyphicon-th"></span>
-           <span>Highest Saleing Products</span>
+           <span><?php  echo text()->translate('Highest Saleing Products'); ?></span>
          </strong>
        </div>
        <div class="panel-body">
          <table class="table table-striped table-bordered table-condensed">
           <thead>
            <tr>
-             <th>Title</th>
-             <th>Total Sold</th>
-             <th>Total Quantity</th>
+             <th><?php echo text()->translate('Title'); ?></th>
+             <th><?php echo text()->translate('Total Sold'); ?></th>
+             <th><?php echo text()->translate('Total Quantity'); ?></th>
            <tr>
           </thead>
           <tbody>
@@ -114,7 +115,7 @@
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
-            <span>LATEST SALES</span>
+            <span><?php echo text()->translate('LATEST SALES'); ?></span>
           </strong>
         </div>
         <div class="panel-body">
@@ -122,9 +123,9 @@
        <thead>
          <tr>
            <th class="text-center" style="width: 50px;">#</th>
-           <th>Product Name</th>
-           <th>Date</th>
-           <th>Total Sale</th>
+           <th><?php echo text()->translate('Product Name'); ?></th>
+           <th><?php echo text()->translate('Date'); ?></th>
+           <th><?php echo text()->translate('Total Sale'); ?></th>
          </tr>
        </thead>
        <tbody>
@@ -151,7 +152,7 @@
       <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Recently Added Products</span>
+          <span><?php echo text()->translate('Recently Added Products'); ?></span>
         </strong>
       </div>
       <div class="panel-body">
