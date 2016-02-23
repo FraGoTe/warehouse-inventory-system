@@ -48,22 +48,22 @@
      <?php echo display_msg($msg); ?>
       <form method="post" action="edit_group.php?id=<?php echo (int)$e_group['id'];?>" class="clearfix">
         <div class="form-group">
-              <label for="name" class="control-label">Group Name</label>
+              <label for="name" class="control-label"><?php  echo text()->translate('Group Name'); ?> </label>
               <input type="name" class="form-control" name="group-name" value="<?php echo remove_junk(ucwords($e_group['group_name'])); ?>">
         </div>
         <div class="form-group">
-              <label for="level" class="control-label">Group Level</label>
+              <label for="level" class="control-label"><?php  echo text()->translate('Group Level'); ?> </label>
               <input type="number" class="form-control" name="group-level" value="<?php echo (int)$e_group['group_level']; ?>">
         </div>
         <div class="form-group">
-          <label for="status">Status</label>
+          <label for="status"><?php echo text()->translate('Status'); ?></label>
               <select class="form-control" name="status">
-                <option <?php if($e_group['group_status'] === '1') echo 'selected="selected"';?> value="1"> Active </option>
-                <option <?php if($e_group['group_status'] === '0') echo 'selected="selected"';?> value="0">Deactive</option>
+                <option <?php if($e_group['group_status'] === '1') echo 'selected="selected"';?> value="1"> <?php  echo text()->translate('Active'); ?> </option>
+                <option <?php if($e_group['group_status'] === '0') echo 'selected="selected"';?> value="0"> <?php  echo text()->translate('Deactive'); ?></option>
               </select>
         </div>
         <div class="form-group clearfix">
-                <button type="submit" name="update" class="btn btn-info">Update</button>
+                <button type="submit" name="update" class="btn btn-info"><?php  echo text()->translate('Update'); ?></button>
         </div>
     </form>
 </div>

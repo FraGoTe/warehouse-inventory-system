@@ -61,7 +61,7 @@ if(!$product){
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
-            <span>Add New Product</span>
+            <span><?php echo text()->translate('Add New Product'); ?></span>
          </strong>
         </div>
         <div class="panel-body">
@@ -79,7 +79,7 @@ if(!$product){
                 <div class="row">
                   <div class="col-md-6">
                     <select class="form-control" name="product-categorie">
-                    <option value=""> Select a categorie</option>
+                    <option value=""> <?php echo text()->translate('Select a categorie'); ?></option>
                    <?php  foreach ($all_categories as $cat): ?>
                      <option value="<?php echo (int)$cat['id']; ?>" <?php if($product['categorie_id'] === $cat['id']): echo "selected"; endif; ?> >
                        <?php echo remove_junk($cat['name']); ?></option>
@@ -88,7 +88,7 @@ if(!$product){
                   </div>
                   <div class="col-md-6">
                     <select class="form-control" name="product-photo">
-                      <option value=""> No image</option>
+                      <option value=""> <?php echo text()->translate('No image'); ?></option>
                       <?php  foreach ($all_photo as $photo): ?>
                         <option value="<?php echo (int)$photo['id'];?>" <?php if($product['media_id'] === $photo['id']): echo "selected"; endif; ?> >
                           <?php echo $photo['file_name'] ?></option>
@@ -102,7 +102,7 @@ if(!$product){
                <div class="row">
                  <div class="col-md-4">
                   <div class="form-group">
-                    <label for="qty">Quantity</label>
+                    <label for="qty"><?php echo text()->translate('Quantity'); ?></label>
                     <div class="input-group">
                       <span class="input-group-addon">
                        <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -113,7 +113,7 @@ if(!$product){
                  </div>
                  <div class="col-md-4">
                   <div class="form-group">
-                    <label for="qty">Buying price</label>
+                    <label for="qty"><?php echo text()->translate('Buying price'); ?></label>
                     <div class="input-group">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon-usd"></i>
@@ -125,7 +125,7 @@ if(!$product){
                  </div>
                   <div class="col-md-4">
                    <div class="form-group">
-                     <label for="qty">Selling price</label>
+                     <label for="qty"><?php echo text()->translate('Selling price'); ?></label>
                      <div class="input-group">
                        <span class="input-group-addon">
                          <i class="glyphicon glyphicon-usd"></i>
@@ -137,7 +137,7 @@ if(!$product){
                   </div>
                </div>
               </div>
-              <button type="submit" name="product" class="btn btn-danger">Update</button>
+              <button type="submit" name="product" class="btn btn-danger"><?php echo text()->translate('Update'); ?></button>
           </form>
          </div>
         </div>
