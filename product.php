@@ -14,7 +14,7 @@
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
          <div class="pull-right">
-           <a href="add_product.php" class="btn btn-primary">Add New</a>
+           <a href="add_product.php" class="btn btn-primary"><?php  echo text()->translate('Add New'); ?></a>
          </div>
         </div>
         <div class="panel-body">
@@ -24,12 +24,12 @@
                 <th class="text-center" style="width: 50px;">#</th>
                 <th> Photo</th>
                 <th> Product Title </th>
-                <th class="text-center" style="width: 10%;"> Categorie </th>
-                <th class="text-center" style="width: 10%;"> Instock </th>
-                <th class="text-center" style="width: 10%;"> Buying Price </th>
-                <th class="text-center" style="width: 10%;"> Saleing Price </th>
-                <th class="text-center" style="width: 10%;"> Product Added </th>
-                <th class="text-center" style="width: 100px;"> Actions </th>
+                <th class="text-center" style="width: 10%;"> <?php  echo text()->translate('Categorie'); ?> </th>
+                <th class="text-center" style="width: 10%;"> <?php  echo text()->translate('Instock'); ?> </th>
+                <th class="text-center" style="width: 10%;"> <?php  echo text()->translate('Buying Price'); ?> </th>
+                <th class="text-center" style="width: 10%;"> <?php  echo text()->translate('Saleing Price'); ?> </th>
+                <th class="text-center" style="width: 10%;"> <?php  echo text()->translate('Product Added'); ?> </th>
+                <th class="text-center" style="width: 100px;"> <?php  echo text()->translate('Actions'); ?> </th>
               </tr>
             </thead>
             <tbody>

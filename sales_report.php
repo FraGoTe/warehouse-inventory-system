@@ -19,7 +19,7 @@ $page_title = 'Sale Report';
       <div class="panel-body">
           <form class="clearfix" method="post" action="sale_report_process.php">
             <div class="form-group">
-              <label class="form-label">Date Range</label>
+              <label class="form-label"><?php  echo text()->translate('Date Range'); ?></label>
                 <div class="input-group">
                   <input type="text" class="datepicker form-control" name="start-date" placeholder="From">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-menu-right"></i></span>
@@ -27,7 +27,7 @@ $page_title = 'Sale Report';
                 </div>
             </div>
             <div class="form-group">
-                 <button type="submit" name="submit" class="btn btn-primary">Generate Report</button>
+                 <button type="submit" name="submit" class="btn btn-primary"><?php  echo text()->translate('Generate Report'); ?></button>
             </div>
           </form>
       </div>

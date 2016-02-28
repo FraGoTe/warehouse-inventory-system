@@ -39,7 +39,7 @@
                     <input type="file" name="file_upload" multiple="multiple" class="btn btn-primary btn-file"/>
                  </span>
 
-                 <button type="submit" name="submit" class="btn btn-default">Upload</button>
+                 <button type="submit" name="submit" class="btn btn-default"><?php  echo text()->translate('Upload'); ?></button>
                </div>
               </div>
              </form>
@@ -50,10 +50,10 @@
               <thead>
                 <tr>
                   <th class="text-center" style="width: 50px;">#</th>
-                  <th class="text-center">Photo</th>
-                  <th class="text-center">Photo Name</th>
-                  <th class="text-center" style="width: 20%;">Photo Type</th>
-                  <th class="text-center" style="width: 50px;">Actions</th>
+                  <th class="text-center"><?php  echo text()->translate('Photo'); ?></th>
+                  <th class="text-center"><?php  echo text()->translate('Photo Name'); ?></th>
+                  <th class="text-center" style="width: 20%;"><?php  echo text()->translate('Photo Type'); ?></th>
+                  <th class="text-center" style="width: 50px;"><?php  echo text()->translate('Actions'); ?></th>
                 </tr>
               </thead>
                 <tbody>

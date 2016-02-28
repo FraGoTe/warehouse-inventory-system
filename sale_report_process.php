@@ -79,18 +79,18 @@ $results = '';
   <?php if($results): ?>
     <div class="page-break">
        <div class="sale-head pull-right">
-           <h1>Sales Report</h1>
+           <h1><?php  echo text()->translate('Sales Report'); ?></h1>
            <strong><?php if(isset($start_date)){ echo $start_date;}?> To <?php if(isset($end_date)){echo $end_date;}?> </strong>
        </div>
       <table class="table table-border">
         <thead>
           <tr>
-              <th>Date</th>
-              <th>Product Title</th>
-              <th>Buying Price</th>
-              <th>Selling Price</th>
-              <th>Total Qty</th>
-              <th>TOTAL</th>
+              <th><?php  echo text()->translate('Date'); ?></th>
+              <th><?php  echo text()->translate('Product Title'); ?></th>
+              <th><?php  echo text()->translate('Buying Price'); ?></th>
+              <th><?php  echo text()->translate('Selling Price'); ?></th>
+              <th><?php  echo text()->translate('Total Qty'); ?></th>
+              <th><?php  echo text()->translate('TOTAL'); ?></th>
           </tr>
         </thead>
         <tbody>
@@ -110,15 +110,15 @@ $results = '';
         <tfoot>
          <tr class="text-right">
            <td colspan="4"></td>
-           <td colspan="1">Grand Total</td>
-           <td> $
+           <td colspan="1"><?php  echo text()->translate('Grand Total'); ?></td>
+           <td> <?php  echo text()->translate('$'); ?>
            <?php echo number_format(total_price($results)[0], 2);?>
           </td>
          </tr>
          <tr class="text-right">
            <td colspan="4"></td>
            <td colspan="1">Profit</td>
-           <td> $<?php echo number_format(total_price($results)[1], 2);?></td>
+           <td> <?php  echo text()->translate('$'); ?><?php echo number_format(total_price($results)[1], 2);?></td>
          </tr>
         </tfoot>
       </table>

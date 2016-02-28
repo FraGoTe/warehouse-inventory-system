@@ -17,19 +17,19 @@
     <div class="panel-heading clearfix">
       <strong>
         <span class="glyphicon glyphicon-th"></span>
-        <span>Groups</span>
+        <span><?php  echo text()->translate('Groups'); ?></span>
      </strong>
-       <a href="add_group.php" class="btn btn-info pull-right btn-sm"> Add New Group</a>
+       <a href="add_group.php" class="btn btn-info pull-right btn-sm"><?php  echo text()->translate('Add New Group'); ?> </a>
     </div>
      <div class="panel-body">
       <table class="table table-bordered">
         <thead>
           <tr>
             <th class="text-center" style="width: 50px;">#</th>
-            <th>Group Name</th>
-            <th class="text-center" style="width: 20%;">Group Level</th>
-            <th class="text-center" style="width: 15%;">Status</th>
-            <th class="text-center" style="width: 100px;">Actions</th>
+            <th><?php  echo text()->translate('Group Name'); ?></th>
+            <th class="text-center" style="width: 20%;"><?php  echo text()->translate('Group Level'); ?></th>
+            <th class="text-center" style="width: 15%;"><?php  echo text()->translate('Status'); ?></th>
+            <th class="text-center" style="width: 100px;"><?php  echo text()->translate('Actions'); ?></th>
           </tr>
         </thead>
         <tbody>

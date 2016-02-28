@@ -22,7 +22,7 @@ $sales = find_all_sale();
             <span>All Sales</span>
           </strong>
           <div class="pull-right">
-            <a href="add_sale.php" class="btn btn-primary">Add sale</a>
+            <a href="add_sale.php" class="btn btn-primary"><?php  echo text()->translate('Add sale'); ?></a>
           </div>
         </div>
         <div class="panel-body">
@@ -31,10 +31,10 @@ $sales = find_all_sale();
               <tr>
                 <th class="text-center" style="width: 50px;">#</th>
                 <th> Product name </th>
-                <th class="text-center" style="width: 15%;"> Quantity</th>
-                <th class="text-center" style="width: 15%;"> Total </th>
-                <th class="text-center" style="width: 15%;"> Date </th>
-                <th class="text-center" style="width: 100px;"> Actions </th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Quantity'); ?></th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Total'); ?> </th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Date'); ?> </th>
+                <th class="text-center" style="width: 100px;"> <?php  echo text()->translate('Actions'); ?> </th>
              </tr>
             </thead>
            <tbody>

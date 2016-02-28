@@ -20,7 +20,7 @@
         <div class="panel-heading clearfix">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
-            <span>Monthly Sales</span>
+            <span><?php  echo text()->translate('Monthly Sales'); ?></span>
           </strong>
         </div>
         <div class="panel-body">
@@ -28,10 +28,10 @@
             <thead>
               <tr>
                 <th class="text-center" style="width: 50px;">#</th>
-                <th> Product name </th>
-                <th class="text-center" style="width: 15%;"> Quantity sold</th>
-                <th class="text-center" style="width: 15%;"> Total </th>
-                <th class="text-center" style="width: 15%;"> Date </th>
+                <th> <?php  echo text()->translate('Product name'); ?> </th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Quantity sold'); ?></th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Total'); ?> </th>
+                <th class="text-center" style="width: 15%;"> <?php  echo text()->translate('Date'); ?> </th>
              </tr>
             </thead>
            <tbody>

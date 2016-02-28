@@ -20,21 +20,21 @@
       <div class="panel-heading clearfix">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Users</span>
+          <span><?php  echo text()->translate('Users'); ?></span>
        </strong>
-         <a href="add_user.php" class="btn btn-info pull-right">Add New User</a>
+         <a href="add_user.php" class="btn btn-info pull-right"><?php  echo text()->translate('Add New User'); ?></a>
       </div>
      <div class="panel-body">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
             <th class="text-center" style="width: 50px;">#</th>
-            <th>Name </th>
-            <th>Username</th>
-            <th class="text-center" style="width: 15%;">User Role</th>
-            <th class="text-center" style="width: 10%;">Status</th>
-            <th style="width: 20%;">Last Login</th>
-            <th class="text-center" style="width: 100px;">Actions</th>
+            <th><?php  echo text()->translate('Name'); ?> </th>
+            <th><?php  echo text()->translate('Username'); ?></th>
+            <th class="text-center" style="width: 15%;"><?php  echo text()->translate('User Role'); ?></th>
+            <th class="text-center" style="width: 10%;"><?php  echo text()->translate('Status'); ?></th>
+            <th style="width: 20%;"><?php  echo text()->translate('Last Login'); ?></th>
+            <th class="text-center" style="width: 100px;"><?php  echo text()->translate('Actions'); ?></th>
           </tr>
         </thead>
         <tbody>
