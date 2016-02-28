@@ -16,7 +16,7 @@
   <body>
   <?php  if ($session->isUserLoggedIn(true)): ?>
     <header id="header">
-      <div class="logo pull-left"> OSWA - Inventory </div>
+      <div class="logo pull-left"> <?php  echo text()->translate('OSWA - Inventory'); ?> </div>
       <div class="header-content">
       <div class="header-date pull-left">
         <strong><?php echo date("F j, Y, g:i a");?></strong>
@@ -32,19 +32,19 @@
               <li>
                   <a href="profile.php?id=<?php echo (int)$user['id'];?>">
                       <i class="glyphicon glyphicon-user"></i>
-                      Profile
+                      <?php  echo text()->translate('Profile'); ?>
                   </a>
               </li>
              <li>
                  <a href="edit_account.php" title="edit account">
                      <i class="glyphicon glyphicon-cog"></i>
-                     Settings
+                     <?php  echo text()->translate('Settings'); ?>
                  </a>
              </li>
              <li class="last">
                  <a href="logout.php">
                      <i class="glyphicon glyphicon-off"></i>
-                     Logout
+                     <?php  echo text()->translate('Logout'); ?>
                  </a>
              </li>
            </ul>
